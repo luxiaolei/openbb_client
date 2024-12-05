@@ -1,0 +1,104 @@
+# SecEtfHoldingsData
+
+SEC ETF Holdings Data.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**symbol** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**lei** | **str** |  | [optional] 
+**cusip** | **str** |  | [optional] 
+**isin** | **str** |  | [optional] 
+**other_id** | **str** |  | [optional] 
+**balance** | **float** |  | [optional] 
+**weight** | **float** |  | [optional] 
+**value** | **float** |  | [optional] 
+**payoff_profile** | **str** |  | [optional] 
+**units** | [**Units1**](Units1.md) |  | [optional] 
+**currency** | **str** |  | [optional] 
+**asset_category** | **str** |  | [optional] 
+**issuer_category** | **str** |  | [optional] 
+**country** | **str** |  | [optional] 
+**is_restricted** | **str** |  | [optional] 
+**fair_value_level** | **int** |  | [optional] 
+**is_cash_collateral** | **str** |  | [optional] 
+**is_non_cash_collateral** | **str** |  | [optional] 
+**is_loan_by_fund** | **str** |  | [optional] 
+**loan_value** | **float** |  | [optional] 
+**issuer_conditional** | **str** |  | [optional] 
+**asset_conditional** | **str** |  | [optional] 
+**maturity_date** | **date** |  | [optional] 
+**coupon_kind** | **str** |  | [optional] 
+**rate_type** | **str** |  | [optional] 
+**annualized_return** | **float** |  | [optional] 
+**is_default** | **str** |  | [optional] 
+**in_arrears** | **str** |  | [optional] 
+**is_paid_kind** | **str** |  | [optional] 
+**derivative_category** | **str** |  | [optional] 
+**counterparty** | **str** |  | [optional] 
+**underlying_name** | **str** |  | [optional] 
+**option_type** | **str** |  | [optional] 
+**derivative_payoff** | **str** |  | [optional] 
+**expiry_date** | **date** |  | [optional] 
+**exercise_price** | **float** |  | [optional] 
+**exercise_currency** | **str** |  | [optional] 
+**shares_per_contract** | **float** |  | [optional] 
+**delta** | [**Delta**](Delta.md) |  | [optional] 
+**rate_type_rec** | **str** |  | [optional] 
+**receive_currency** | **str** |  | [optional] 
+**upfront_receive** | **float** |  | [optional] 
+**floating_rate_index_rec** | **str** |  | [optional] 
+**floating_rate_spread_rec** | **float** |  | [optional] 
+**rate_tenor_rec** | **str** |  | [optional] 
+**rate_tenor_unit_rec** | [**RateTenorUnitRec**](RateTenorUnitRec.md) |  | [optional] 
+**reset_date_rec** | **str** |  | [optional] 
+**reset_date_unit_rec** | [**ResetDateUnitRec**](ResetDateUnitRec.md) |  | [optional] 
+**rate_type_pmnt** | **str** |  | [optional] 
+**payment_currency** | **str** |  | [optional] 
+**upfront_payment** | **float** |  | [optional] 
+**floating_rate_index_pmnt** | **str** |  | [optional] 
+**floating_rate_spread_pmnt** | **float** |  | [optional] 
+**rate_tenor_pmnt** | **str** |  | [optional] 
+**rate_tenor_unit_pmnt** | [**RateTenorUnitPmnt**](RateTenorUnitPmnt.md) |  | [optional] 
+**reset_date_pmnt** | **str** |  | [optional] 
+**reset_date_unit_pmnt** | [**ResetDateUnitPmnt**](ResetDateUnitPmnt.md) |  | [optional] 
+**repo_type** | **str** |  | [optional] 
+**is_cleared** | **str** |  | [optional] 
+**is_tri_party** | **str** |  | [optional] 
+**principal_amount** | **float** |  | [optional] 
+**principal_currency** | **str** |  | [optional] 
+**collateral_type** | **str** |  | [optional] 
+**collateral_amount** | **float** |  | [optional] 
+**collateral_currency** | **str** |  | [optional] 
+**exchange_currency** | **str** |  | [optional] 
+**exchange_rate** | **float** |  | [optional] 
+**currency_sold** | **str** |  | [optional] 
+**currency_amount_sold** | **float** |  | [optional] 
+**currency_bought** | **str** |  | [optional] 
+**currency_amount_bought** | **float** |  | [optional] 
+**notional_amount** | **float** |  | [optional] 
+**notional_currency** | **str** |  | [optional] 
+**unrealized_gain** | **float** |  | [optional] 
+
+## Example
+
+```python
+from openbb_client.models.sec_etf_holdings_data import SecEtfHoldingsData
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of SecEtfHoldingsData from a JSON string
+sec_etf_holdings_data_instance = SecEtfHoldingsData.from_json(json)
+# print the JSON string representation of the object
+print(SecEtfHoldingsData.to_json())
+
+# convert the object into a dict
+sec_etf_holdings_data_dict = sec_etf_holdings_data_instance.to_dict()
+# create an instance of SecEtfHoldingsData from a dict
+sec_etf_holdings_data_from_dict = SecEtfHoldingsData.from_dict(sec_etf_holdings_data_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
